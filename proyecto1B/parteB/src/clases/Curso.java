@@ -15,4 +15,24 @@ public class Curso {
 		this.duracion = duracion;
 		this.electivas = electivas;
 	}
+	
+	public String getNombre() {
+		return nombre;
+	}
+
+	public int getCreditos() {
+		return creditos;
+	}
+
+	public String getTipo() {
+		return tipo;
+	}
+
+	public int getDuracion() {
+		return duracion;
+	}
+
+	public String getElectivas() {
+		return electivas;
+	}
 }
