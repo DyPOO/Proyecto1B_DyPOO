@@ -15,4 +15,21 @@ public class Pensum {
 		this.requisitosAdicionales = requisitosAdicionales;
 		this.cursos = cursos;
 	}
+
+	public String getCreditos() {
+		return creditos;
+	}
+
+	public int getCantidadMaterias() {
+		return cantidadMaterias;
+	}
+
+	public String getRequisitosAdicionales() {
+		return requisitosAdicionales;
+	}
+
+	public ArrayList<Curso> getCursos() {
+		return cursos;
+	}
+	
 }

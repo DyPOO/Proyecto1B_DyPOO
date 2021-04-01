@@ -15,4 +15,22 @@ public class Estudiante {
 		this.codigoEstudiante = codigoEstudiante;
 		this.creditosAprobados = creditosAprobados;
 	}
+
+	public String getNombre() {
+		return nombre;
+	}
+
+	public String getApellido() {
+		return apellido;
+	}
+
+	public String getCodigoEstudiante() {
+		return codigoEstudiante;
+	}
+
+	public int getCreditosAprobados() {
+		return creditosAprobados;
+	}
+	
+	
 }
