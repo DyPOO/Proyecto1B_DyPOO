@@ -7,13 +7,14 @@ public class Pensum {
 	private int cantidadMaterias;
 	private String requisitosAdicionales;
 	private ArrayList<Curso> cursos;
-	// private *tipo* cronograma;
+	private Cronograma cronograma;
 	
-	Pensum(String creditos, int cantidadMaterias, String requisitosAdicionales, ArrayList<Curso> cursos){
+	Pensum(String creditos, int cantidadMaterias, String requisitosAdicionales, ArrayList<Curso> cursos,Cronograma cronograma){
 		this.creditos = creditos;
 		this.cantidadMaterias = cantidadMaterias;
 		this.requisitosAdicionales = requisitosAdicionales;
 		this.cursos = cursos;
+		this.cronograma = cronograma;
 	}
 
 	public String getCreditos() {
@@ -30,6 +31,10 @@ public class Pensum {
 
 	public ArrayList<Curso> getCursos() {
 		return cursos;
+	}
+
+	public Cronograma getCronograma() {
+		return cronograma;
 	}
 	
 }
