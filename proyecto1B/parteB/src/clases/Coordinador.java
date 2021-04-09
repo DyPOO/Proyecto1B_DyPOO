@@ -1,6 +1,6 @@
 package clases;
 
-public class Coordinador {
+public class Coordinador extends Usuario{
 	private Estudiante estudiante;
 	private String nombre;
 	private String apellido;
