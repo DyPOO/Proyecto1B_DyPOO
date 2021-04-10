@@ -3,51 +3,41 @@ package clases;
 import java.util.ArrayList;
 
 public class Estudiante extends Usuario{
-	private String nombre;
-	private String apellido;
-	private String codigoEstudiante;
-	private int creditosAprobados;
-	private ArrayList<Curso> cursosTomados;
-	private ArrayList<Curso> cursosFuturos;
-	private ArrayList<Curso> requisitosCumplidos;
+	ArrayList<Materia> materiasVistas;
+	int semestreActual;
+	float promedioSemestre;
+	float promedioPonderado;
+	Grado requisitosDeGrado;
 	
-	Estudiante(String nombre, String apellido, String codigoEstudiante, int creditosAprobados, ArrayList<Curso> cursosTomados,ArrayList<Curso> cursosFuturos,ArrayList<Curso> requisitosCumplidos){
-		this.nombre = nombre;
-		this.apellido = apellido;
-		this.codigoEstudiante = codigoEstudiante;
-		this.creditosAprobados = creditosAprobados;
-		this.cursosTomados = cursosTomados;
-		this.cursosFuturos = cursosFuturos;
-		this.requisitosCumplidos = requisitosCumplidos;
+	Estudiante(String codigo, String nombre, String apellido, ArrayList<Materia> materiasVistas, int semestreActual,float promedioSemestre, float promedoPonderado, Grado requisitosDeGrado){
+		super(codigo,nombre,apellido);
+		this.materiasVistas = materiasVistas;
+		this.semestreActual = semestreActual;
+		this.promedioSemestre = promedioSemestre;
+		this.promedioPonderado = promedoPonderado;
+		this.requisitosDeGrado = requisitosDeGrado;
 	}
 
-	public String getNombre() {
-		return nombre;
+	public ArrayList<Materia> getMateriasVistas() {
+		return materiasVistas;
 	}
 
-	public String getApellido() {
-		return apellido;
+	public int getSemestreActual() {
+		return semestreActual;
 	}
 
-	public String getCodigoEstudiante() {
-		return codigoEstudiante;
+	public float getPromedioSemestre() {
+		return promedioSemestre;
 	}
 
-	public int getCreditosAprobados() {
-		return creditosAprobados;
+	public float getPromedioPonderado() {
+		return promedioPonderado;
 	}
 
-	public ArrayList<Curso> getCursosFuturos() {
-		return cursosFuturos;
+	public Grado getRequisitosDeGrado() {
+		return requisitosDeGrado;
 	}
 
-	public ArrayList<Curso> getCursosTomados() {
-		return cursosTomados;
-	}
-
-	public ArrayList<Curso> getRequisitosCumplidos() {
-		return requisitosCumplidos;
-	}
 	
 	
 }

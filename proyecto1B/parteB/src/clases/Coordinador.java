@@ -1,35 +1,24 @@
 package clases;
 
+import java.util.ArrayList;
+
 public class Coordinador extends Usuario{
-	private Estudiante estudiante;
-	private String nombre;
-	private String apellido;
-	private String departamento;
+	ArrayList<Estudiante> listaEstudiantes;
 	
-	
-	Coordinador(Estudiante estudiante, String nombre, String apellido, String departamento){
-		this.estudiante = estudiante;
-		this.nombre = nombre;
-		this.apellido = apellido;
-		this.departamento = departamento;
+	Coordinador(String codigo, String nombre, String apellido,ArrayList<Estudiante> listaEstudiantes){
+		super(codigo,nombre,apellido);
+		this.listaEstudiantes = listaEstudiantes;
+	}
+
+	public ArrayList<Estudiante> getListaEstudiantes() {
+		return listaEstudiantes;
 	}
 	
-	public Estudiante getEstudiante() {
-		return estudiante;
+	public void asignarNotaEstudiante(String codigo) {
+		
 	}
-
-
-	public String getNombre() {
-		return nombre;
-	}
-
-
-	public String getApellido() {
-		return apellido;
-	}
-
-
-	public String getDepartamento() {
-		return departamento;
+	
+	public void generarReporte(String codigo) {
+		
 	}
 }
