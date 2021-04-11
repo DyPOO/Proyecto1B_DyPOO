@@ -1,13 +1,12 @@
-package clases;
+package sistema;
 
 import java.util.ArrayList;
 
 public class Coordinador extends Usuario{
-	ArrayList<Estudiante> listaEstudiantes;
+	ArrayList<Estudiante> listaEstudiantes = new ArrayList<>();
 	
-	Coordinador(String codigo, String nombre, String apellido,ArrayList<Estudiante> listaEstudiantes){
-		super(codigo,nombre,apellido);
-		this.listaEstudiantes = listaEstudiantes;
+	public Coordinador(){
+		
 	}
 
 	public ArrayList<Estudiante> getListaEstudiantes() {

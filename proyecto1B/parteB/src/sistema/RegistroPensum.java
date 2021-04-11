@@ -1,11 +1,11 @@
-package clases;
+package sistema;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 
 public class RegistroPensum {
-		ArrayList<HashMap> pensum;
-		ArrayList<HashMap> usuarios;
+		ArrayList<HashMap> pensum = new ArrayList<>();
+		ArrayList<HashMap> usuarios = new ArrayList<>();
 		Estudiante controlEstudiantes;
 		Coordinador controlCoordinadores;
 		
